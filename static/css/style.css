@@ -1,11 +1,72 @@
-@font-face { 
-  font-family: News Cycle; 
-    src: url('../fonts/NewsCycle-Regular.eot'); 
-    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
-} 
+.register_button
+{ font: normal 110% Arial, Helvetica, sans-serif;
+  width: 80px;
+  padding: 5px 2px 7px 2px;
+  background: #CCC;
+  text-align:center;
+  background: -moz-linear-gradient(#FFF, #BBB);
+  background: -o-linear-gradient(#FFF, #BBB);
+  background: -webkit-linear-gradient(#FFF, #BBB); 
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  position: fixed;
+  left:91%;
+  top: 0%; }
+  
+.register_button a
+{ color: #000;
+  text-shadow: 1px 1px #FFF;
+  padding-left: 5px;
+  position: fixed;
+  left:20%;
+  }			
+
+
+.rent_container
+{
+	width: 275px;
+  padding: 5px;
+  margin: 0px 0px 0px 0px;
+  float: left;
+}
+
+.contact_button 
+{ color: #000;
+  text-shadow: 1px 1px #FFF;
+  padding-left: 5px;
+ text-align: center;
+  }	
+
+.contact_button
+{ font: normal 110% Arial, Helvetica, sans-serif;
+  width: 80px;
+  padding: 2px 2px 2px 2px;
+  background: #CCC;
+  text-align:center;
+  background: -moz-linear-gradient(#FFF, #BBB);
+  background: -o-linear-gradient(#FFF, #BBB);
+  background: -webkit-linear-gradient(#FFF, #BBB); 
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  }
+
+.terms_and_conditions
+{
+	
+	
+}
 
 html
-{ height: 100%;}
+{ height: 100%;
+ }
 
 *
 { margin: 0;
@@ -15,6 +76,7 @@ body
 { font: normal 80% Arial, Helvetica, sans-serif;
   color: #FFF;
   text-shadow: 1px 1px #000;
+  text-align:center;
   background: transparent url(../images/background.jpg) repeat;}
 
 /* tell the browser to render HTML 5 elements as block */
@@ -27,33 +89,40 @@ p
   line-height: 1.7em;}
 
 img
-{ border: 0;}
+{ border: 0;
+text-align: left;}
 
 h1, h2, h3, h4, h5, h6 
 { font: normal 250% 'News Cycle', Arial, sans-serif;
   color: #FFF;
+    text-align:center;
   letter-spacing: -1px;
   margin: 0 0 10px 0;}
 
 h2
-{ font-size: 165%;}
+{ font-size: 130%;
+  text-align:center;}
 
 h3
-{ font-size: 130%;}
+{ font-size: 165%;
+  text-align:center;}
 
 h4, h5, h6
 { margin: 0;
   padding: 0 0 0px 0;
   font-size: 150%;
+    text-align:center;
   line-height: 1.5em;}
 
-h5, h6
+h5, h6 , 
 { font: normal 95% Arial, Helvetica, sans-serif;
-  padding-bottom: 15px;}
+  padding-bottom: 15px;
+}
   
 span
 { color: #676767;
-  text-shadow: 1px 1px #FFF;}
+  text-shadow: 1px 1px #FFF;
+    text-align:center;}
 
 a, a:hover
 { color: #000;
@@ -76,8 +145,8 @@ ol
 ol li
 { margin: 0 0 11px 0;}
 
-#main, header, #banner, #menubar, #site_content, footer, #content_grey, nav
-{ margin-left: auto; 
+#main, header, #banner, , #site_content, footer, #content_grey, nav
+{ margin-left: 
   margin-right: auto;}
 
 #main
@@ -97,11 +166,13 @@ nav
 { height: 50px;}  
   
 #menubar
-{ width: 940px;
+{ width: 50%;
   height: 50px;
-  text-align: center; 
+  text-align: center;
+
   margin: 0 auto;} 
   
+ 
 #welcome
 { width: 880px;
   float: left;
@@ -164,10 +235,10 @@ ul#nav li.current a, ul#nav li:hover a
   text-shadow: none;}
 
 #site_content
-{ width: 940px;
+{ width: 1400px;
   overflow: hidden;
   margin-bottom: 30px;
-  background: transparent url(../images/transparent.png) repeat;
+text-align: center;
   border-radius: 0px 0px 7px 7px;
   -moz-border-radius: 0px 0px 7px 7px;
   -webkit-border: 0px 0px 7px 7px;
@@ -203,8 +274,15 @@ ul#nav li.current a, ul#nav li:hover a
 .content_container
 { width: 275px;
   padding: 5px;
-  margin: 10px 10px 20px 0;
+  margin: 20px 20% 50px 0;
   float: left;}
+  
+  .instagram
+{ width: 275px;
+  padding: 5px;
+  margin: 20px 20% 50px 0;
+  float: left;
+  color: white;}
   
 footer
 { width: 940px;
@@ -236,6 +314,7 @@ footer a:hover
   width: 80px;
   padding: 5px 2px 7px 2px;
   background: #CCC;
+  text-align:center
   background: -moz-linear-gradient(#FFF, #BBB);
   background: -o-linear-gradient(#FFF, #BBB);
   background: -webkit-linear-gradient(#FFF, #BBB); 
@@ -260,7 +339,7 @@ footer a:hover
 .form_settings span
 { float: left; 
   width: 280px; 
-  text-align: left;
+  text-align: center;
   text-shadow: none;
   color: #FFF;
   text-shadow: 1px 1px #000;}
@@ -328,7 +407,8 @@ ul.slideshow li.show {
   z-index: 500;}
  
 ul img {
-  border: none;}
+  border: none;
+  text-align: left;}
  
 #slideshow-caption {
   width: 900px;
